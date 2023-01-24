@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/* font-family: 'Karla', sans-serif; */
+
+
+* , *::after , *::before{
+    box-sizing: border-box;
+     
+}
+/* - Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%) */
+
+:root{
+    --cyan:hsl(179 , 62% , 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray:hsl(204 , 43% , 93%);
+    --grayish-blue:hsl(218 , 22% , 63%);
+
+
+}
+body{
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background: var(--light-gray);
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    padding: 1em;
+     
+}
+
+h1{
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--cyan);
+
+}
+
+h4{
+    color: var(--bright-yellow);
+}
+
+
+
+.main{
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 0.4rem;
+    overflow: hidden;
+
+}
+
+.top{
+    background: #fff;
+}
+.top p {
+    color: var(--grayish-blue);
+}
+.bottom-top{
+    background-color: hsl(179 , 62% , 43% , 0.94);
+}
+
+ 
+
+.bottom-bottom{
+    background: hsl(179 , 62% , 43% , 0.73);
+}
+
+.bottom-bottom p   {
+    color: hsl(204 , 43% , 93% , 0.75);
+}
+
+.top , 
+.bottom-bottom , 
+.bottom-top{
+    padding: 1.7em;
+}
+
+.bottom-top h3 , 
+ 
+.bottom-top p,
+.bottom-bottom h3{
+    color: var(--light-gray);
+}
+
+ 
+.price span{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+.price{
+    display: flex;
+   
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5em;
+    
+    
+    
+}
+
+.bottom-top h3{
+    margin: 0 0 0.4em;
+}
+
+.bottom-top .full-price{
+    margin: 0 0 2em;
+}
+.price p{
+    color:rgba(242, 238, 234, 0.55);
+     
+}
+ 
+ 
+
+.btn{
+    background: var(--bright-yellow);
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 1em 0;
+    border-radius: 0.3rem;
+    font-weight: bold;
+}
+.btn:hover{
+    transform: scale(0.96);
+}
+.bottom-bottom h3{
+    margin-top: 0;
+}
+.bottom-bottom p{
+    margin-bottom: 0;
+     
+}
+
+@media(min-width: 600px){
+    body{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main{
+       
+        width: 600px;
+      
+    }
+    .bottom{
+        display: flex;
+    }
+
+    .bottom-top{
+        width: 50%;
+    
+    }
+    .bottom-bottom{
+        width: 50%;
+    }
+}
